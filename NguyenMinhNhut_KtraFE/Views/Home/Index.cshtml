@@ -1,0 +1,813 @@
+﻿@{
+    ViewBag.Title = "Product List";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Amazon - Product List</title>
+
+    <!-- Font Awesome 5.15.4 -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+    <!-- CSS của bài -->
+    <link rel="stylesheet"
+          href="@Url.Content("~/Content/ProductList.css")" />
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="amazon-header">
+
+        <div class="amazon-logo">
+            amazon<span>.com</span>
+        </div>
+
+        <div class="deliver">
+            <i class="fas fa-map-marker-alt"></i>
+
+            <div>
+                <small>Deliver to</small>
+                <strong>Vietnam</strong>
+            </div>
+        </div>
+
+        <div class="search-box">
+
+            <select>
+                <option>All</option>
+                <option>Appliances</option>
+                <option>Home</option>
+                <option>Tools</option>
+            </select>
+
+            <input type="text"
+                   value="cleaning tools"
+                   placeholder="Search Amazon" />
+
+            <button>
+                <i class="fas fa-search"></i>
+            </button>
+
+        </div>
+
+        <div class="language">
+            🇺🇸
+            <b>EN</b>
+            <i class="fas fa-caret-down"></i>
+        </div>
+
+        <div class="header-account">
+            <small>Hello, sign in</small>
+            <strong>
+                Account & Lists
+                <i class="fas fa-caret-down"></i>
+            </strong>
+        </div>
+
+        <div class="header-orders">
+            <small>Returns</small>
+            <strong>& Orders</strong>
+        </div>
+
+        <div class="header-cart">
+            <i class="fas fa-shopping-cart"></i>
+            <strong>Cart</strong>
+        </div>
+
+    </header>
+
+
+    <!-- ================= NAVIGATION ================= -->
+
+    <nav class="amazon-nav">
+
+        <div>
+            <i class="fas fa-bars"></i>
+            All
+        </div>
+
+        <div>Today's Deals</div>
+        <div>Customer Service</div>
+        <div>Registry</div>
+        <div>Gift Cards</div>
+        <div>Sell</div>
+
+    </nav>
+
+
+    <!-- ================= RESULT ================= -->
+
+    <div class="result-bar">
+
+        <div>
+            1-48 of over 40,000 results for
+            <strong>"cleaning tools"</strong>
+        </div>
+
+        <button class="sort-button">
+            Sort by: Featured
+            <i class="fas fa-chevron-down"></i>
+        </button>
+
+    </div>
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main class="main-container">
+
+        <!-- ================= SIDEBAR ================= -->
+
+        <aside class="sidebar">
+
+            <h3>Popular Shopping ideas</h3>
+
+            <a href="#">Window</a>
+            <a href="#">Bathing</a>
+            <a href="#">Household</a>
+            <a href="#">Tile</a>
+            <a href="#" class="see-more">See more</a>
+
+
+            <hr />
+
+
+            <h3>Customer Reviews</h3>
+
+            <div class="review-filter">
+                <span>★★★★★</span>
+                <label>& Up</label>
+            </div>
+
+
+            <hr />
+
+
+            <h3>Deals & Discounts</h3>
+
+            <a href="#">Today's Deals</a>
+
+
+            <hr />
+
+
+            <h3>Price</h3>
+
+            <a href="#">Under $10</a>
+            <a href="#">$10 to $15</a>
+            <a href="#">$15 to $25</a>
+            <a href="#">$25 to $35</a>
+            <a href="#">$35 & Above</a>
+
+            <div class="price-slider">
+                <input type="range" min="0" max="100" value="15" />
+
+                <div class="price-values">
+                    <span>$0</span>
+                    <span>$510</span>
+                </div>
+            </div>
+
+
+            <hr />
+
+
+            <h3>Department</h3>
+
+            <a href="#">Household Cleaning Tools</a>
+            <a href="#">Household Cleaning Brushes</a>
+            <a href="#">Household Mops, Buckets & Accessories</a>
+
+        </aside>
+
+
+        <!-- ================= PRODUCT AREA ================= -->
+
+        <section class="product-area">
+
+            <div class="product-grid">
+
+
+                <!-- PRODUCT 1 -->
+
+                <article class="product-card">
+
+                    <div class="sponsored">
+                        Sponsored
+                    </div>
+
+                    <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=500&q=80"
+                         alt="Electric Spin Scrubber" />
+
+                    <h2>
+                        Electric Spin Scrubber, 2025 New Cordless
+                        Cleaning Brush for Home
+                    </h2>
+
+                    <div class="stars">
+                        ★★★★☆
+                        <span>1,254</span>
+                    </div>
+
+                    <div class="price">
+                        $39<sup>99</sup>
+                    </div>
+
+                    <div class="old-price">
+                        List price:
+                        <del>$49.99</del>
+                    </div>
+
+                    <p class="delivery">
+                        FREE delivery Tue, Nov 4
+                    </p>
+
+                    <button class="cart-button">
+                        Add to cart
+                    </button>
+
+                </article>
+
+
+                <!-- PRODUCT 2 -->
+
+                <article class="product-card">
+
+                    <div class="sponsored">
+                        Sponsored
+                    </div>
+
+                    <img src="https://images.unsplash.com/photo-1585421514738-01798e348b17?auto=format&fit=crop&w=500&q=80"
+                         alt="Cleaning Brush" />
+
+                    <h2>
+                        Casabella Power Spin Scrubber,
+                        Extendable 4.75" Cordless Electric Cleaner
+                    </h2>
+
+                    <div class="stars">
+                        ★★★★☆
+                        <span>428</span>
+                    </div>
+
+                    <div class="price">
+                        $49<sup>99</sup>
+                    </div>
+
+                    <div class="old-price">
+                        List price:
+                        <del>$69.99</del>
+                    </div>
+
+                    <p class="delivery">
+                        FREE delivery Tue, Nov 4
+                    </p>
+
+                    <button class="cart-button">
+                        Add to cart
+                    </button>
+
+                </article>
+
+
+                <!-- PRODUCT 3 -->
+
+                <article class="product-card">
+
+                    <div class="sponsored">
+                        Sponsored
+                    </div>
+
+                    <img src="https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?auto=format&fit=crop&w=500&q=80"
+                         alt="Electric Scrubber" />
+
+                    <h2>
+                        Electric Spin Scrubber - Cordless
+                        Cleaning Brush with Digital Display
+                    </h2>
+
+                    <div class="stars">
+                        ★★★★★
+                        <span>735</span>
+                    </div>
+
+                    <div class="price">
+                        $35<sup>99</sup>
+                    </div>
+
+                    <div class="old-price">
+                        List price:
+                        <del>$59.99</del>
+                    </div>
+
+                    <p class="delivery">
+                        FREE delivery Tue, Nov 4
+                    </p>
+
+                    <button class="cart-button">
+                        Add to cart
+                    </button>
+
+                </article>
+
+
+                <!-- PRODUCT 4 -->
+
+                <article class="product-card">
+
+                    <div class="sponsored">
+                        Sponsored
+                    </div>
+
+                    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=500&q=80"
+                         alt="Power Spin Scrubber" />
+
+                    <h2>
+                        Casabella Power Spin Handheld
+                        Scrubber, Rechargeable
+                    </h2>
+
+                    <div class="stars">
+                        ★★★★☆
+                        <span>2,104</span>
+                    </div>
+
+                    <div class="price">
+                        $34<sup>99</sup>
+                    </div>
+
+                    <div class="old-price">
+                        List price:
+                        <del>$45.99</del>
+                    </div>
+
+                    <p class="delivery">
+                        FREE delivery Tue, Nov 4
+                    </p>
+
+                    <button class="cart-button">
+                        Add to cart
+                    </button>
+
+                </article>
+
+
+                <!-- PRODUCT 5 -->
+
+                <article class="product-card">
+
+                    <div class="sponsored">
+                        Sponsored
+                    </div>
+
+                    <img src="https://images.unsplash.com/photo-1583947215259-38e31be8751f?auto=format&fit=crop&w=500&q=80"
+                         alt="Electric Spin Scrubber" />
+
+                    <h2>
+                        TUYU Electric Spin Scrubber,
+                        Full Body IPX7 Waterproof Scrubber
+                    </h2>
+
+                    <div class="stars">
+                        ★★★★☆
+                        <span>1,876</span>
+                    </div>
+
+                    <div class="price">
+                        $44<sup>99</sup>
+                    </div>
+
+                    <div class="old-price">
+                        List price:
+                        <del>$64.99</del>
+                    </div>
+
+                    <p class="delivery">
+                        FREE delivery Tue, Nov 4
+                    </p>
+
+                    <button class="cart-button">
+                        Add to cart
+                    </button>
+
+                </article>
+
+            </div>
+
+
+            <!-- ================= SECTION 1 ================= -->
+
+            <section class="recommend-section">
+
+                <div class="section-heading">
+
+                    <h2>
+                        Customers who viewed items in your browsing
+                        history also viewed
+                    </h2>
+
+                    <span>Page 1 of 2</span>
+
+                </div>
+
+
+                <div class="mini-product-list">
+
+
+                    <div class="mini-product">
+
+                        <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=300&q=80"
+                             alt="Bag" />
+
+                        <p>
+                            Women's Fashion Handbag
+                        </p>
+
+                        <div class="stars">
+                            ★★★★☆
+                            <span>82</span>
+                        </div>
+
+                        <strong>$25.99</strong>
+
+                    </div>
+
+
+                    <div class="mini-product">
+
+                        <img src="https://images.unsplash.com/photo-1594223274512-ad4803739b7c?auto=format&fit=crop&w=300&q=80"
+                             alt="Bag" />
+
+                        <p>
+                            Women's Leather Shoulder Bag
+                        </p>
+
+                        <div class="stars">
+                            ★★★★★
+                            <span>120</span>
+                        </div>
+
+                        <strong>$37.99</strong>
+
+                    </div>
+
+
+                    <div class="mini-product">
+
+                        <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=300&q=80"
+                             alt="Bag" />
+
+                        <p>
+                            Classic Fashion Handbag
+                        </p>
+
+                        <div class="stars">
+                            ★★★★☆
+                            <span>213</span>
+                        </div>
+
+                        <strong>$49.99</strong>
+
+                    </div>
+
+
+                    <div class="mini-product">
+
+                        <img src="https://images.unsplash.com/photo-1566150905458-1bf1fc113f0d?auto=format&fit=crop&w=300&q=80"
+                             alt="Bag" />
+
+                        <p>
+                            Leather Tote Shoulder Bag
+                        </p>
+
+                        <div class="stars">
+                            ★★★★★
+                            <span>95</span>
+                        </div>
+
+                        <strong>$32.99</strong>
+
+                    </div>
+
+
+                    <div class="mini-product">
+
+                        <img src="https://images.unsplash.com/photo-1590874103328-eac38a683ce7?auto=format&fit=crop&w=300&q=80"
+                             alt="Bag" />
+
+                        <p>
+                            Small Crossbody Bag
+                        </p>
+
+                        <div class="stars">
+                            ★★★★☆
+                            <span>61</span>
+                        </div>
+
+                        <strong>$29.99</strong>
+
+                    </div>
+
+
+                    <div class="mini-product">
+
+                        <img src="https://images.unsplash.com/photo-1559563458-527698bf5295?auto=format&fit=crop&w=300&q=80"
+                             alt="Bag" />
+
+                        <p>
+                            Classic Mini Handbag
+                        </p>
+
+                        <div class="stars">
+                            ★★★★★
+                            <span>310</span>
+                        </div>
+
+                        <strong>$45.99</strong>
+
+                    </div>
+
+
+                    <div class="mini-product">
+
+                        <img src="https://images.unsplash.com/photo-1585488436289-0e9f8fca4a56?auto=format&fit=crop&w=300&q=80"
+                             alt="Bag" />
+
+                        <p>
+                            Women's Fashion Shoulder Bag
+                        </p>
+
+                        <div class="stars">
+                            ★★★★☆
+                            <span>75</span>
+                        </div>
+
+                        <strong>$39.99</strong>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- ================= SECTION 2 ================= -->
+
+            <section class="recommend-section">
+
+                <div class="section-heading">
+
+                    <h2>
+                        Recommended based on your browsing history
+                    </h2>
+
+                    <span>Page 1 of 2</span>
+
+                </div>
+
+
+                <div class="mini-product-list">
+
+
+                    <div class="mini-product">
+
+                        <img src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=300&q=80"
+                             alt="Bag" />
+
+                        <p>
+                            Large Lightweight Women's Tote Bag
+                        </p>
+
+                        <div class="stars">
+                            ★★★★★
+                            <span>671</span>
+                        </div>
+
+                        <strong>$55.00</strong>
+
+                    </div>
+
+
+                    <div class="mini-product">
+
+                        <img src="https://images.unsplash.com/photo-1594223274512-ad4803739b7c?auto=format&fit=crop&w=300&q=80"
+                             alt="Bag" />
+
+                        <p>
+                            Top Grain Leather Bag
+                        </p>
+
+                        <div class="stars">
+                            ★★★★☆
+                            <span>413</span>
+                        </div>
+
+                        <strong>$75.99</strong>
+
+                    </div>
+
+
+                    <div class="mini-product">
+
+                        <img src="https://images.unsplash.com/photo-1566150905458-1bf1fc113f0d?auto=format&fit=crop&w=300&q=80"
+                             alt="Bag" />
+
+                        <p>
+                            New Women's Fashion Shoulder Bag
+                        </p>
+
+                        <div class="stars">
+                            ★★★★★
+                            <span>255</span>
+                        </div>
+
+                        <strong>$48.99</strong>
+
+                    </div>
+
+
+                    <div class="mini-product">
+
+                        <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=300&q=80"
+                             alt="Bag" />
+
+                        <p>
+                            Simple Solid Color Shoulder Bag
+                        </p>
+
+                        <div class="stars">
+                            ★★★★☆
+                            <span>94</span>
+                        </div>
+
+                        <strong>$19.99</strong>
+
+                    </div>
+
+
+                    <div class="mini-product">
+
+                        <img src="https://images.unsplash.com/photo-1590874103328-eac38a683ce7?auto=format&fit=crop&w=300&q=80"
+                             alt="Bag" />
+
+                        <p>
+                            PUMA Women's Fashion Tote
+                        </p>
+
+                        <div class="stars">
+                            ★★★★☆
+                            <span>100</span>
+                        </div>
+
+                        <strong>$36.99</strong>
+
+                    </div>
+
+
+                    <div class="mini-product">
+
+                        <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=300&q=80"
+                             alt="Bag" />
+
+                        <p>
+                            Women's Medium Leather Bag
+                        </p>
+
+                        <div class="stars">
+                            ★★★★★
+                            <span>73</span>
+                        </div>
+
+                        <strong>$52.99</strong>
+
+                    </div>
+
+
+                    <div class="mini-product">
+
+                        <img src="https://images.unsplash.com/photo-1559563458-527698bf5295?auto=format&fit=crop&w=300&q=80"
+                             alt="Bag" />
+
+                        <p>
+                            Waterproof Nylon Tote Bag
+                        </p>
+
+                        <div class="stars">
+                            ★★★★☆
+                            <span>126</span>
+                        </div>
+
+                        <strong>$36.67</strong>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="back-to-top">
+            Back to top
+        </div>
+
+
+        <div class="footer-content">
+
+            <div>
+                <h3>Get to Know Us</h3>
+
+                <a href="#">Careers</a>
+                <a href="#">Amazon Newsletter</a>
+                <a href="#">About Amazon</a>
+                <a href="#">Accessibility</a>
+                <a href="#">Sustainability</a>
+            </div>
+
+
+            <div>
+
+                <h3>Make Money with Us</h3>
+
+                <a href="#">Sell products on Amazon</a>
+                <a href="#">Sell apps on Amazon</a>
+                <a href="#">Become an Affiliate</a>
+                <a href="#">Advertise Your Products</a>
+                <a href="#">Self-Publish</a>
+
+            </div>
+
+
+            <div>
+
+                <h3>Amazon Payment Products</h3>
+
+                <a href="#">Amazon Visa</a>
+                <a href="#">Amazon Store Card</a>
+                <a href="#">Amazon Secured Card</a>
+                <a href="#">Credit Card Marketplace</a>
+                <a href="#">Reload Your Balance</a>
+
+            </div>
+
+
+            <div>
+
+                <h3>Let Us Help You</h3>
+
+                <a href="#">Your Account</a>
+                <a href="#">Your Orders</a>
+                <a href="#">Shipping Rates</a>
+                <a href="#">Returns & Replacements</a>
+                <a href="#">Help</a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <div class="footer-logo">
+                amazon
+            </div>
+
+            <div>English</div>
+            <div>USD - U.S. Dollar</div>
+            <div>United States</div>
+
+        </div>
+
+
+        <div class="copyright">
+
+            Conditions of Use
+            &nbsp;&nbsp;
+            Privacy Notice
+            &nbsp;&nbsp;
+            Your Ads Privacy Choices
+
+            <br />
+
+            © 2026 - TenSV_KtraFE
+
+        </div>
+
+    </footer>
+
+</body>
+</html>
